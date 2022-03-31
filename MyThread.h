@@ -3,10 +3,10 @@
 class MyThread {
     public: 
     MyThread();
-    virtual run() = 0;
+    virtual void run() = 0;
     void Start();
-    void End();
+    void Join();
 
     private:
-    std::thread m_thread;
+    std::thread *m_thread;
 };
