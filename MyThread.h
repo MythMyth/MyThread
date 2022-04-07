@@ -1,3 +1,6 @@
+#ifndef __MYTHREAD__
+#define __MYTHREAD__
+
 #include<thread>
 
 class MyThread {
@@ -10,3 +13,5 @@ class MyThread {
     private:
     std::thread *m_thread;
 };
+
+#endif
